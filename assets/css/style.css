@@ -1797,3 +1797,49 @@ section {
     padding-top: 4px;
   }
 }
+
+
+.about .flowchart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.flowchart h3 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.flowchart .step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  width: 90%;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.flowchart .step p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+.flowchart .step:after {
+  content: "↓";
+  font-size: 20px;
+  color: #4CAF50;
+  position: absolute;
+  bottom: -25px;
+}
+
+.flowchart .step:last-child:after {
+  display: none;
+}

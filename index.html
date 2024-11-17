@@ -223,7 +223,11 @@
     </div>
 
     <div class="row content">
-      <div class="col-lg-6">
+      <div class="col-lg-4">
+        <!-- Image Placeholder -->
+        <img src="/assets/img/Flowchart-of-e-waste-management.png" alt="About Us Image" class="img-fluid" style="max-width: 100%; height: auto; border-radius: 8px;">
+      </div>
+      <div class="col-lg-8">
         <p>
           Our Vision is to re-use and recycle the electronic waste produced every day in our homes and offices.
         </p>
@@ -232,8 +236,6 @@
             <i class="ri-check-double-line"></i> We encourage people to responsibly dispose of unused electronic devices to conserve the environment.
           </li>
         </ul>
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0">
         <p>
           We are a team of passionate Computer Science students working toward a sustainable future by reducing e-waste.
         </p>
@@ -243,29 +245,82 @@
     <div class="flowchart">
       <h3>E-Waste Recycling Process</h3>
 
-      <div class="step">
-        <p><strong>1. Collection:</strong> Gather e-waste from individuals and companies.</p>
-      </div>
-
-      <div class="step">
-        <p><strong>2. Sorting and Dismantling:</strong> Separate materials for safe processing.</p>
-      </div>
-
-      <div class="step">
-        <p><strong>3. Recycling:</strong> Extract valuable metals and components for reuse.</p>
-      </div>
-
-      <div class="step">
-        <p><strong>4. Refurbishing:</strong> Repair devices for affordable resale.</p>
-      </div>
-
-      <div class="step">
-        <p><strong>5. Safe Disposal:</strong> Responsibly manage hazardous waste.</p>
+      <div class="flowchart-step main-step">Electronic Waste
+        <div class="flowchart-step sub-step">Repaired/Re-used/Sharing</div>
+        
+        <div class="flowchart-step sub-step">Dismantling/Module Separation
+          <div class="flowchart-step sub-sub-step">Component's Recovery
+            <div class="flowchart-step sub-sub-sub-step">PCB Cleaning and Reusing
+              <div>Recyclable/Disposal</div>
+            </div>
+            <div class="flowchart-step sub-sub-sub-step">Batteries
+              <div>Metals Recovery</div>
+            </div>
+            <div class="flowchart-step sub-sub-sub-step">Other Electronic Components
+              <div>Recovery or Recycling (e.g., transformers, ICs, switches)</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="flowchart-step sub-step">Mechanical Shredding
+          <div class="flowchart-step sub-sub-step">Plastics (Mainly Casing)
+            <div>Recyclable</div>
+            <div>Non-recyclable/Disposal</div>
+          </div>
+          <div class="flowchart-step sub-sub-step">Glass (Screen, CRT, etc.)
+            <div>Recyclable</div>
+          </div>
+          <div class="flowchart-step sub-sub-step">Metals (Mainly Casing)
+            <div>Recyclable</div>
+          </div>
+          <div class="flowchart-step sub-sub-step">Printed Circuit Boards (PCBs)
+            <div>Recovery of Metals</div>
+            <div>Recyclable of PCBs</div>
+          </div>
+          <div class="flowchart-step sub-sub-step">Cables/Wires/Connectors
+            <div>Plastics Cover Recovery</div>
+            <div>Metals Recovery</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
 <!-- End About Us Section -->
+
+<!-- CSS for Flowchart -->
+<style>
+  .flowchart {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .flowchart h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  .flowchart-step {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f8f9fa;
+  }
+  .main-step {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  .sub-step {
+    margin-top: 15px;
+  }
+  .sub-sub-step, .sub-sub-sub-step {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+</style>
+
+
 
 
       <!-- ======= Why Us Section ======= -->
